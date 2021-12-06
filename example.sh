@@ -55,6 +55,7 @@ ref0b () {
         done
     done
     for b in 1 2 3; do
+        sleep 0.5
         git checkout master
         git merge --no-edit --no-ff f$b
     done
@@ -218,10 +219,10 @@ issue3 () {
     read -p "Press key to continue ..." -n1 -s; echo
 }
 
-# ref0a
-# ref0b
-# ref1
-# issue1
-# issue2
+ref0a
+ref0b
+ref1
+issue1
+issue2
 issue3
 
